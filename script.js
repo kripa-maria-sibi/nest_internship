@@ -1,23 +1,7 @@
 (() => {
-  const themeToggle = document.getElementById('themeToggle');
   const body = document.body;
   const year = document.getElementById('year');
   year.textContent = new Date().getFullYear();
-
-  // Theme
-  const saved = localStorage.getItem('theme');
-  if (saved === 'light') body.classList.add('light');
-  updateThemeIcon();
-  
-  function updateThemeIcon() {
-    themeToggle.textContent = body.classList.contains('light') ? '🌙' : '☀️';
-  }
-  
-  themeToggle.addEventListener('click', () => {
-    body.classList.toggle('light');
-    localStorage.setItem('theme', body.classList.contains('light') ? 'light' : 'dark');
-    updateThemeIcon();
-  });
 
   // Smooth nav
   document.querySelectorAll('.nav a[href^="#"]').forEach(a => {
