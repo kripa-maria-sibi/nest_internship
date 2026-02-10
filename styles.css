@@ -3,7 +3,7 @@
   --radius:12px; --glass-2:rgba(255,255,255,0.03);
 }
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%;overflow-x:hidden}
 body{margin:0;font-family:Inter,Segoe UI,system-ui,Arial;background:linear-gradient(180deg,#071029 0%, #091427 60%);color:#e6f0f6;line-height:1.4}
 
 .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 28px;position:sticky;top:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.25));backdrop-filter:blur(6px);z-index:10}
